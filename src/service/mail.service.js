@@ -43,7 +43,7 @@ class MailService{
                 html:message
             }
 
-            if(attachement){
+            if(attachements){
                 msgOpts['attachements'] = attachements
             }
 
