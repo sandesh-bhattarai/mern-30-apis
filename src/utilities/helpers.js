@@ -11,4 +11,10 @@ const randomString = (length)=>{
     return random;
 }
 
-module.exports = {randomString}
+const deleteFile = (filePath)=>{
+    if(fs.existsSync(filePath)){
+        fs.unlinkSync(filePath)
+    }
+}
+
+module.exports = {randomString, deleteFile}
